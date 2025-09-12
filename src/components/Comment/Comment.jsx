@@ -92,7 +92,7 @@ const Comment = ({ data  }) => {
               <div className="p-5 border border-gray-200 rounded-xl shadow-md bg-white h-full">
                 <div className="flex justify-between items-center mb-3">
                   <span className="font-semibold text-gray-900">
-                    {c.user.username}
+                    {c.user?.username}
                   </span>
                   <span className="text-xs text-gray-500">
                     {new Date(c.createdAt).toLocaleDateString()}
