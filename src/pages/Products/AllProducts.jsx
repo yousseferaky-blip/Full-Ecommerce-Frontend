@@ -30,7 +30,7 @@ const AllProducts = () => {
       const res = await axios.get(`${BASE_URL}/product`, {
         params: {
           page: currentPage,
-          limit: 6, 
+          limit: 10, 
           categories: selectedCategories.join(','), 
           brands: selectedBrandies.join(','), 
           sort: sortOption

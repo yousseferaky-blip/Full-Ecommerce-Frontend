@@ -30,14 +30,18 @@ const AddProduct = () => {
     images.forEach((img)=>{ formData.append("images", img); })
 
 
-    await axios.post(`${BASE_URL}/product`, formData , { withCredentials: true });
+    await axios.post(`${BASE_URL}/product`, formData , {
+       withCredentials: true , headers: 
+      { "Content-Type": "multipart/form-data" } 
+    });
     toast.success("Product uploaded successfully!");
 
     setTitle(""); setPrice(""); setDiscount(""); setCategory(""); setBrand(""); setDescription(""); setImage(null); setImages([]);  
     navigate("/dashboard/products")
     window.location.reload()
   } catch(err) {
-    console.log(err.response ? err.response.data : err)
+    console.error(err.response?.data);
+    alert(JSON.stringify(err.response?.data, null, 2));
   }
 }
 
