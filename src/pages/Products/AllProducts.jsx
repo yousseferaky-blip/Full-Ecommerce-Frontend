@@ -198,9 +198,9 @@ const AllProducts = () => {
                     <FaStar /><FaStar /><FaStar /><FaStar /><CiStar />
                   </div>
                 </div>
-                <div className="w-full flex flex-col gap-2 sm:justify-between sm:items-center">
+                <div className="w-full flex  flex-col gap-2 sm:flex-row sm:justify-between sm:items-center">
                   <p className="text-base font-medium">${d.price}</p>
-                  <Link to={`/product/${d._id}`} className="block px-4 py-1.5 cursor-pointer text-gray-500 border border-gray-500/20 rounded-full text-xs hover:bg-slate-100 transition">Buy now</Link>
+                  <Link to={`/product/${d._id}`} className="sm:block px-4 py-1.5 cursor-pointer text-gray-500 border border-gray-500/20 rounded-full text-xs hover:bg-slate-100 transition">Buy now</Link>
                 </div>
 
                 <button onClick={() => AddToWish(d._id)} className='absolute p-2 top-1 right-1 text-black hover:text-red-600 bg-white rounded-full cursor-pointer'>
