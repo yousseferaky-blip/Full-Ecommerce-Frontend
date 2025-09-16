@@ -51,6 +51,18 @@ const SignIn = () => {
                 <p className='ml-4 w-12 h-[2px] bg-gray-700'></p>
             </div>
 
+            <div className="flex flex-col items-center justify-center pt-8">
+              <p className="text-gray-500  text-lg flex items-center">
+                Admin: 
+                <span className="ml-2 text-gray-700 font-medium">yeraky07@gmail.com</span>
+              </p>
+              <p className="text-gray-500  text-lg flex items-center mt-2">
+                Password: 
+                <span className="ml-2 text-gray-700 font-medium">123456</span>
+              </p>
+              <div className="mt-4 w-20 h-[2px] bg-gray-700"></div>
+            </div>
+
             <form 
              onSubmit={handleSubmit}
              className='mt-3 w-full h-full flex items-center justify-center flex-col'>
