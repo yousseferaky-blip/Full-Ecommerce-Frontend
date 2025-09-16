@@ -26,7 +26,7 @@ const Footer = () => {
         <div className='flex flex-col md:items-center md:text-center'>
           <h2 className='font-semibold text-lg mb-2'>Get in touch</h2>
           <ul className='space-y-1 text-gray-600'>
-            <li>+1-234-567-890</li>
+            <li>+1-234-567-870</li>
             <li>contact@greatstack.dev</li>
           </ul>
         </div>
